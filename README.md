@@ -1,2 +1,2 @@
 # TComiss
- API - Comissaõ Sobel
+ API - Comissão Sobel
