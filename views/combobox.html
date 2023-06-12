@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Sobel - Gestão de RCA</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h2>Gerar comissão</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="rcaSelect">Selecionar RCA:</label>
+        <select class="form-control" id="rcaSelect">
+          <option value="">Selecione...</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Requisição para obter os dados da API
+      $.getJSON('http://localhost:3000/api/rca', function(data) {
+        var select = $('#rcaSelect');
+
+        // Adicionar as opções no combobox
+        $.each(data, function(index, item) {
+          select.append($('<option>').val(item.CODIGOERP).text(item.NOME));
+        });
+      });
+    });
+  </script>
+</body>
+</html>

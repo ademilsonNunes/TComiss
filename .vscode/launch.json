@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://localhost:3000/api/TReportComiss?vendedor=000212&dataInicial=20230501&dataFinal=20230531",
+            "request": "launch",
+            "url": "http://localhost:3000/api/TReportComiss?vendedor=000212&dataInicial=20230501&dataFinal=20230531"
+        }
+    ]
+}

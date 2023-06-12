@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    margin-top: 20px;
+  }
+  
+  .table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f5f5f5;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .total {
+    font-weight: bold;
+  }
+  
+  .text-danger {
+    color: red;
+  }
+  
+  .extrato {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .extrato th,
+  .extrato td {
+    padding: 6px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .extrato th {
+    background-color: #f5f5f5;
+  }
+  
+  .extrato tr:last-child {
+    font-weight: bold;
+  }
+  
