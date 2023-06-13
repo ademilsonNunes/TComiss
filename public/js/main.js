@@ -12,7 +12,7 @@ $(document).ready(function() {
   
       // Fazer a requisição AJAX para a API
       $.ajax({
-        url: 'http://localhost:3000/api/TReportComiss?'
+        url: 'http://192.168.0.130:3000/api/TReportComiss?'
           + 'vendedor=' + encodeURIComponent(vendedor)
           + '&dataInicial=' + encodeURIComponent(dataInicial)
           + '&dataFinal=' + encodeURIComponent(dataFinal),

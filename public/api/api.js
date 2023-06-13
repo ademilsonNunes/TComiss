@@ -151,6 +151,9 @@ app.get('/api/TReportComiss', (req, res) => {
 });
 
 // Inicialização do servidor
-app.listen(3000, () => {
-  console.log('API iniciada na porta 3000');
+const ipAddress = '192.168.0.130';
+const port = 3000;
+
+app.listen(port, ipAddress, () => {
+  console.log(`Servidor ouvindo em http://${ipAddress}:${port}`);
 });
